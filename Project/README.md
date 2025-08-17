@@ -1,10 +1,9 @@
 # Multi-Cloud Data Transfer with AWS and GCP
 
-**Project Link:** [View Project](http://learn.nextwork.org/projects/aws-multicloud-storage)
 
 ---
 
-![Image](http://learn.nextwork.org/intense_azure_festive_sow/uploads/aws-multicloud-storage_s5k4l5m6)
+![Image](https://github.com/Alvin-Janton/Multi-Cloud-Data-Transfer/blob/9f8d7961ee15864b36c3e9eac9ce20270afa1274/images/architecture-annotated.png?raw=true)
 
 ---
 
@@ -44,7 +43,7 @@ GCP's free tier includes over 25 different services. I also get credit to spend 
 
 Data transfers are important for implementing multi-cloud solutions. Using multiple cloud providers for the transfer has benefits such as redundancy, cost, and infrastructure diversity.
 
-The transfer is set up using Storage Transfer Service, which isa service that automates the transfer of data between cloud platforms. We need this service because doing data transfers manually would be slow, error prone, and expensive.
+The transfer is set up using Storage Transfer Service, which is a service that automates the transfer of data between cloud platforms. We need this service because doing data transfers manually would be slow, error prone, and expensive.
 
 There are two different types of transfers you could set up, batch scheduling, and event-driven scheduling. The difference is, batch scheduling uploads all the data that is different from the previous backup, while event-driven scheduling uploads data any time a new object is stored.
 
@@ -54,7 +53,7 @@ There are two different types of transfers you could set up, batch scheduling, a
 
 ## Granting GCP Access to AWS
 
-To connect AWS and GCP, I'm using identity federation, which works by granting GCP temporary access keys to my account to access resources. This is more secure than other methods because it ensures that only trusted entities have access to your account, and the access it temporary, so once GCP is done, it no longer has access until it makes its next request.
+To connect AWS and GCP, I'm using identity federation, which works by granting GCP temporary access keys to my account to access resources. This is more secure than other methods because it ensures that only trusted entities have access to your account, and the access is temporary, so once GCP is done, it no longer has access until it makes its next request.
 
 I created a custom IAM role for GCP because it does not have the permissions to access the bucket otherwise.
 
