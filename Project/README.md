@@ -75,16 +75,22 @@ I verified my data transfer was successful by viewing the bucket that the data w
 
 ## Transfer with a Manifest
 
-In a project extension, I added more files to my S3 bucket, and I'm going to create a manifest file to transfer specific ones. A manifest file works by telling GCP the name of the file(s) to transfer.
+In the final step of the project, I added more files to my S3 bucket, and I'm going to create a manifest file to transfer specific ones. A manifest file works by telling GCP the name of the file(s) to transfer. First, I added three new files to my S3 bucket.
 
-I verified my data transfer was successful by viewing the bucket that the data was supposed to transfer to. When I clicked into the bucket, I saw that the files had successfully transferred from S3 to GCP.
+![Image](https://github.com/Alvin-Janton/Multi-Cloud-Data-Transfer/blob/f6a60ae7cae1f3e4258ffa657a35f7f1b8ecd9a1/images/Screenshot%202025-08-07%20162608.png)
+
+---
+
+Next, I created a manifest csv file to select one text file from my S3 bucket to transfer to GCP, and uploaded the manifest file to my Cloud Storage bucket.
+
+![Image](https://github.com/Alvin-Janton/Multi-Cloud-Data-Transfer/blob/f6a60ae7cae1f3e4258ffa657a35f7f1b8ecd9a1/images/Screenshot%202025-08-17%20180731.png)
+
+---
+
+Finally, I verified my data transfer was successful by viewing the bucket that the data was supposed to transfer to. When I clicked into the bucket, I saw that the files had successfully transferred from S3 to GCP.
 
 ![Image](http://learn.nextwork.org/intense_azure_festive_sow/uploads/aws-multicloud-storage_rththrthrth)
 
 ---
 
-## Trial, Error, Success
 
----
-
----
